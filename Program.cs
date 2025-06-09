@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
   
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +24,12 @@ builder.Services.AddHttpClient<GoogleSearchService>();
 builder.Services.AddScoped<MasoutisScraper>();
 builder.Services.AddScoped<AbScraper>();
 builder.Services.AddScoped<DiscountScraper>();
-
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
 builder.Services.AddScoped<Func<string, IScraper>>(provider => key =>
 {
     return key.ToLower() switch

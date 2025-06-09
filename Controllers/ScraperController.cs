@@ -49,20 +49,34 @@ foreach (var product in products)
         var alreadyLinked = await _smRepo.GetLinkedProductIds(supermarket.Id);
 
         foreach (var p in products)
-        {
-            var normalizedName = p.Name.Trim().ToLower();
-            var existing = await _productRepo.GetByNameAsync(normalizedName);
-            if (existing == null)
-            {
-                await _productRepo.AddAsync(p);
-                existing = p;
-            }
+{
+    var normalizedName = p.Name.Trim().ToLower();
+    var existing = await _productRepo.GetByNameAsync(normalizedName);
 
-            if (!alreadyLinked.Contains(existing.Id))
-            {
-                await _smRepo.AddProductToSupermarketAsync(supermarket.Id, existing.Id);
-            }
+    if (existing == null)
+    {
+        await _productRepo.AddAsync(p);
+        existing = p;
+    }
+    else
+    {
+        //only update price if product is already linked to this supermarket
+        if (alreadyLinked.Contains(existing.Id) && existing.Price != p.Price)
+        {
+            var oldPrice = existing.Price;
+            existing.Price = p.Price;
+            await _productRepo.UpdateAsync(existing);
+
+            Console.WriteLine($"🔄 Updated price for '{existing.Name}' (supermarket '{supermarket.Name}'): {oldPrice}€ → {p.Price}€");
         }
+    }
+
+    //link if not already linked
+    if (!alreadyLinked.Contains(existing.Id))
+    {
+        await _smRepo.AddProductToSupermarketAsync(supermarket.Id, existing.Id);
+    }
+}
 
         return Ok(products);
     }

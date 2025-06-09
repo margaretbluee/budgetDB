@@ -29,16 +29,37 @@ public class SupermarketRepository : ISupermarketRepository
         return supermarket;
     }
 
+    // public async Task AddProductToSupermarketAsync(int supermarketId, int productId)
+    // {
+    //     var entry = new SupermarketProduct
+    //     {
+    //         SupermarketId = supermarketId,
+    //         ProductId = productId
+    //     };
+    //     _context.SupermarketProducts.Add(entry);
+    //     await _context.SaveChangesAsync();
+    // }
+
     public async Task AddProductToSupermarketAsync(int supermarketId, int productId)
+{
+    bool alreadyExists = await _context.SupermarketProducts
+        .AnyAsync(sp => sp.SupermarketId == supermarketId && sp.ProductId == productId);
+
+   if (!alreadyExists)
+{
+    _context.SupermarketProducts.Add(new SupermarketProduct
     {
-        var entry = new SupermarketProduct
-        {
-            SupermarketId = supermarketId,
-            ProductId = productId
-        };
-        _context.SupermarketProducts.Add(entry);
-        await _context.SaveChangesAsync();
-    }
+        SupermarketId = supermarketId,
+        ProductId = productId
+    });
+    await _context.SaveChangesAsync();
+    Console.WriteLine($"✅ Linked Product {productId} to Supermarket {supermarketId}");
+}
+else
+{
+    Console.WriteLine($"⚠️ Product {productId} already linked to Supermarket {supermarketId}");
+}
+}
 
     public async Task<List<Product>> GetProductsBySupermarketAsync(int supermarketId)
     {

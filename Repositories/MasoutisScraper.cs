@@ -64,7 +64,8 @@ private async Task<List<Product>> ScrapeCategoryAsync(string categoryUrl)
     foreach (var node in productNodes)
     {
         var imgNode = node.SelectSingleNode(".//img[contains(@class, 'productImage')]");
-        var priceNode = node.SelectSingleNode(".//div[contains(@class, 'price')]");
+        // var priceNode = node.SelectSingleNode(".//div[contains(@class, 'price')]");
+var priceNode = node.SelectSingleNode(".//span[contains(@class, 'extracted-price')]");
 
         string name = imgNode?.GetAttributeValue("title", "Unknown")?.Trim() ?? "Unknown";
         string priceText = priceNode?.InnerText?.Trim() ?? "0";

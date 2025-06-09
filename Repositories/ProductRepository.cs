@@ -34,11 +34,11 @@ public class ProductRepository : IProductRepository
     {
         _context.Products.Add(product);
         var result = await _context.SaveChangesAsync();
-        Console.WriteLine($"Saved {result} record(s) to DB: {product.Name}");
+        Console.WriteLine($"✅ Saved {result} record(s) to DB: {product.Name}");
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Error saving product '{product.Name}': {ex.Message}");
+        Console.WriteLine($"❌ Error saving product '{product.Name}': {ex.Message}");
         if (ex.InnerException != null)
         {
             Console.WriteLine($"Inner exception: {ex.InnerException.Message}");

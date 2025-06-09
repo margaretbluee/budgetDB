@@ -1,4 +1,5 @@
 using Microsoft.Playwright;
+using System.Text;
 
 public class PlaywrightHelper
 {
@@ -15,11 +16,25 @@ public class PlaywrightHelper
         var page = await browser.NewPageAsync();
         await page.GotoAsync(url, new PageGotoOptions { Timeout = 60000 });
 
-        // Wait for the productList to be available
+        // Wait for product list to load
         await page.WaitForSelectorAsync("div.productList", new PageWaitForSelectorOptions
         {
             Timeout = 30000
         });
+
+        // Run JS in browser context to insert consistent price spans into DOM
+        await page.EvaluateAsync(@"
+            Array.from(document.querySelectorAll('div.productList .product')).forEach(product => {
+                let price = product.querySelector('div.price')?.innerText ||
+                            product.querySelector('div.disPrices-wrapper div.pDscntPrice.t-right')?.innerText;
+                if (price) {
+                    let priceSpan = document.createElement('span');
+                    priceSpan.className = 'extracted-price';
+                    priceSpan.textContent = price;
+                    product.appendChild(priceSpan);
+                }
+            });
+        ");
 
         return await page.ContentAsync();
     }
