@@ -7,6 +7,7 @@ public class Product
 
         public string? Category { get; set; } = string.Empty; 
 
+public bool Discount { get; set; }
 
     public List<SupermarketProduct> SupermarketProducts { get; set; } = new();
 }

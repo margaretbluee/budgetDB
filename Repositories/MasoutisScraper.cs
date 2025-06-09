@@ -67,21 +67,35 @@ private async Task<List<Product>> ScrapeCategoryAsync(string categoryUrl)
         // var priceNode = node.SelectSingleNode(".//div[contains(@class, 'price')]");
 var priceNode = node.SelectSingleNode(".//span[contains(@class, 'extracted-price')]");
 
-        string name = imgNode?.GetAttributeValue("title", "Unknown")?.Trim() ?? "Unknown";
+
+var discountNode = node.SelectSingleNode(".//span[contains(@class, 'discount-flag')]");
+
+            string name = imgNode?.GetAttributeValue("title", "Unknown")?.Trim() ?? "Unknown";
         string priceText = priceNode?.InnerText?.Trim() ?? "0";
+bool discount = discountNode?.InnerText.Trim().ToLower() == "true";
 
         priceText = Regex.Replace(priceText, @"[^\d,\.]", "").Replace(",", ".");
-        if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal price))
-            price = 0;
+            // if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal price))
+            //     price = 0;
+        
+        decimal price = 0;
+if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out price))
+{
+    // Skip adding this product if price couldn't be parsed
+    _logger.LogWarning($"⚠️ Could not parse price for {name}, skipping.");
+    continue;
+}
 
         products.Add(new Product
         {
             Name = name,
             Price = price,
-            Category = categoryName
+            Category = categoryName,
+            Discount = discount
         });
+_logger.LogInformation($"Parsed: {name} | {categoryName} | {price}€| Discount: {discount}");
 
-        _logger.LogInformation($"Parsed: {name} | {categoryName} | {price}€");
+        _logger.LogInformation($"Parsed: {name} | {categoryName} | {price}€| Discount: {discount}");
     }
 
     return products;

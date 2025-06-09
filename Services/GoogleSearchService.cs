@@ -2,8 +2,7 @@ using Newtonsoft.Json;
 
 public class GoogleSearchService
 {
-    private readonly string _apiKey = "AIzaSyCYtqRzl4FLgvutQYXsO2wxty6tI7BfJuY"; // Replace with your actual key
-    private readonly string _cx = "f7a611ef788c44d8d"; // Replace with your actual CX ID
+ 
     private readonly HttpClient _httpClient;
 
     public GoogleSearchService(HttpClient httpClient)

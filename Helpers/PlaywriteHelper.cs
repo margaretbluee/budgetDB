@@ -23,18 +23,26 @@ public class PlaywrightHelper
         });
 
         // Run JS in browser context to insert consistent price spans into DOM
-        await page.EvaluateAsync(@"
-            Array.from(document.querySelectorAll('div.productList .product')).forEach(product => {
-                let price = product.querySelector('div.price')?.innerText ||
-                            product.querySelector('div.disPrices-wrapper div.pDscntPrice.t-right')?.innerText;
-                if (price) {
-                    let priceSpan = document.createElement('span');
-                    priceSpan.className = 'extracted-price';
-                    priceSpan.textContent = price;
-                    product.appendChild(priceSpan);
-                }
-            });
-        ");
+    await page.EvaluateAsync(@"
+    Array.from(document.querySelectorAll('div.productList .product')).forEach(product => {
+        let hasRegularPrice = !!product.querySelector('div.price');
+        let regularPrice = product.querySelector('div.price')?.innerText;
+        let discountPrice = product.querySelector('div.disPrices-wrapper div.pDscntPrice.t-right')?.innerText;
+        
+        let finalPrice = regularPrice || discountPrice;
+        if (finalPrice) {
+            let priceSpan = document.createElement('span');
+            priceSpan.className = 'extracted-price';
+            priceSpan.textContent = finalPrice;
+            product.appendChild(priceSpan);
+
+            let discountSpan = document.createElement('span');
+            discountSpan.className = 'discount-flag';
+            discountSpan.textContent = hasRegularPrice ? 'false' : 'true';
+            product.appendChild(discountSpan);
+        }
+    });
+");
 
         return await page.ContentAsync();
     }
