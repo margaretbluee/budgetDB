@@ -16,6 +16,24 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ISupermarketRepository, SupermarketRepository>();
+builder.Services.AddHttpClient<GoogleSearchService>();
+builder.Services.AddHttpClient<GoogleSearchService>();
+
+
+builder.Services.AddScoped<MasoutisScraper>();
+builder.Services.AddScoped<AbScraper>();
+builder.Services.AddScoped<DiscountScraper>();
+
+builder.Services.AddScoped<Func<string, IScraper>>(provider => key =>
+{
+    return key.ToLower() switch
+    {
+        "masoutis" => provider.GetRequiredService<MasoutisScraper>(),
+        "ab"       => provider.GetRequiredService<AbScraper>(),
+        "discount" => provider.GetRequiredService<DiscountScraper>(),
+        _ => throw new KeyNotFoundException($"No scraper registered for '{key}'")
+    };
+});
 
 builder.Services.AddDbContext<BudgetDbContext>(options => 
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection") ,

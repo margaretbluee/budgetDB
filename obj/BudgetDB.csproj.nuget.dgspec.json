@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[4.0.2, )"
             },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.12.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -69,9 +73,17 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.Playwright": {
+              "target": "Package",
+              "version": "[1.52.0, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[9.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

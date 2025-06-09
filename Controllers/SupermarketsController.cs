@@ -35,5 +35,37 @@ public class SupermarketsController : ControllerBase
         var products = await _repo.GetProductsBySupermarketAsync(supermarketId);
         return Ok(products);
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, Supermarket supermarket)
+    {
+        if (id != supermarket.Id)
+            return BadRequest("ID mismatch");
+
+        var existing = await _repo.GetByIdAsync(id);
+        if (existing == null)
+            return NotFound("Supermarket not found.");
+
+        await _repo.UpdateAsync(supermarket);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var existing = await _repo.GetByIdAsync(id);
+        if (existing == null)
+            return NotFound("Supermarket not found.");
+
+        await _repo.DeleteAsync(id);
+        return NoContent();
+    }
+
+    [HttpGet("search")]
+    public async Task<IActionResult> Search([FromQuery] string? name)
+    {
+        var results = await _repo.SearchByNameAsync(name);
+        return Ok(results);
+    }
 }
 

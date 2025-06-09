@@ -22,10 +22,11 @@ public class SupermarketRepository : ISupermarketRepository
             .FirstOrDefaultAsync(s => s.Id == id);
     }
 
-    public async Task AddAsync(Supermarket supermarket)
+    public async Task<Supermarket> AddAsync(Supermarket supermarket)
     {
         _context.Supermarkets.Add(supermarket);
         await _context.SaveChangesAsync();
+        return supermarket;
     }
 
     public async Task AddProductToSupermarketAsync(int supermarketId, int productId)
@@ -46,4 +47,43 @@ public class SupermarketRepository : ISupermarketRepository
             .Select(sp => sp.Product)
             .ToListAsync();
     }
+    public async Task UpdateAsync(Supermarket supermarket)
+    {
+        _context.Supermarkets.Update(supermarket);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        var supermarket = await _context.Supermarkets.FindAsync(id);
+        if (supermarket != null)
+        {
+            _context.Supermarkets.Remove(supermarket);
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    public async Task<List<int>> GetLinkedProductIds(int supermarketId)
+{
+    return await _context.SupermarketProducts
+        .Where(sp => sp.SupermarketId == supermarketId)
+        .Select(sp => sp.ProductId)
+        .ToListAsync();
+}
+
+    public async Task<List<Supermarket>> SearchByNameAsync(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return await _context.Supermarkets.ToListAsync();
+
+        return await _context.Supermarkets
+            .Where(s => s.Name.Contains(name))
+            .ToListAsync();
+    }
+
+    public async Task<Supermarket?> GetByNameAsync(string name)
+{
+    return await _context.Supermarkets
+        .FirstOrDefaultAsync(s => s.Name.ToLower() == name.ToLower());
+}
 }
