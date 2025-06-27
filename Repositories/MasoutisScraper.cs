@@ -39,7 +39,7 @@ private async Task<List<Product>> ScrapeCategoryAsync(string categoryUrl)
 
     try
     {
-        html = await PlaywrightHelper.GetRenderedHtmlAsync(categoryUrl);
+        html = await MasoutisPlaywrightHelper.GetRenderedHtmlAsync(categoryUrl);
     }
     catch (Exception ex)
     {
@@ -61,42 +61,36 @@ private async Task<List<Product>> ScrapeCategoryAsync(string categoryUrl)
 
     string categoryName = ExtractCategoryFromUrl(categoryUrl);
 
-    foreach (var node in productNodes)
-    {
-        var imgNode = node.SelectSingleNode(".//img[contains(@class, 'productImage')]");
-        // var priceNode = node.SelectSingleNode(".//div[contains(@class, 'price')]");
-var priceNode = node.SelectSingleNode(".//span[contains(@class, 'extracted-price')]");
-
-
-var discountNode = node.SelectSingleNode(".//span[contains(@class, 'discount-flag')]");
-
-            string name = imgNode?.GetAttributeValue("title", "Unknown")?.Trim() ?? "Unknown";
-        string priceText = priceNode?.InnerText?.Trim() ?? "0";
-bool discount = discountNode?.InnerText.Trim().ToLower() == "true";
-
-        priceText = Regex.Replace(priceText, @"[^\d,\.]", "").Replace(",", ".");
-            // if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal price))
-            //     price = 0;
-        
-        decimal price = 0;
-if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out price))
+foreach (var node in productNodes)
 {
-    // Skip adding this product if price couldn't be parsed
-    _logger.LogWarning($"⚠️ Could not parse price for {name}, skipping.");
-    continue;
+    var imgNode = node.SelectSingleNode(".//img[contains(@class, 'productImage')]");
+    var priceNode = node.SelectSingleNode(".//span[contains(@class, 'extracted-price')]");
+    var discountNode = node.SelectSingleNode(".//span[contains(@class, 'discount-flag')]");
+
+    string name = imgNode?.GetAttributeValue("title", "Unknown")?.Trim() ?? "Unknown";
+    string priceText = priceNode?.InnerText?.Trim() ?? "0";
+    bool discount = discountNode?.InnerText.Trim().ToLower() == "true";
+
+    priceText = Regex.Replace(priceText, @"[^\d,\.]", "").Replace(",", ".");
+
+    if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal price))
+    {
+        _logger.LogWarning($"⚠️ Could not parse price for '{name}' in category '{categoryName}'. Raw text: '{priceText}'");
+        continue;
+    }
+
+    var product = new Product
+    {
+        Name = name,
+        Price = price,
+        Category = categoryName,
+        Discount = discount
+    };
+
+    products.Add(product);
+    _logger.LogInformation($"✅ Parsed: '{product.Name}' | {product.Category} | {product.Price}€ | Discount: {product.Discount}");
 }
 
-        products.Add(new Product
-        {
-            Name = name,
-            Price = price,
-            Category = categoryName,
-            Discount = discount
-        });
-_logger.LogInformation($"Parsed: {name} | {categoryName} | {price}€| Discount: {discount}");
-
-        _logger.LogInformation($"Parsed: {name} | {categoryName} | {price}€| Discount: {discount}");
-    }
 
     return products;
 }

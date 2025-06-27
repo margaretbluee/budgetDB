@@ -2,9 +2,10 @@ using Newtonsoft.Json;
 
 public class GoogleSearchService
 {
- 
+    private readonly string _apiKey = "asfsa";  
+    private readonly string _cx = "sdgsdfg";  
     private readonly HttpClient _httpClient;
-
+ 
     public GoogleSearchService(HttpClient httpClient)
     {
         _httpClient = httpClient;

@@ -33,6 +33,8 @@ builder.Services.AddHttpClient<GoogleSearchService>();
 
 
 builder.Services.AddScoped<MasoutisScraper>();
+builder.Services.AddScoped<SklavenitisScraper>();
+
 builder.Services.AddScoped<AbScraper>();
 builder.Services.AddScoped<DiscountScraper>();
 builder.Services.AddControllers()
@@ -48,6 +50,8 @@ builder.Services.AddScoped<Func<string, IScraper>>(provider => key =>
         "masoutis" => provider.GetRequiredService<MasoutisScraper>(),
         "ab"       => provider.GetRequiredService<AbScraper>(),
         "discount" => provider.GetRequiredService<DiscountScraper>(),
+        "sklavenitis" => provider.GetRequiredService<SklavenitisScraper>(),
+
         _ => throw new KeyNotFoundException($"No scraper registered for '{key}'")
     };
 });
