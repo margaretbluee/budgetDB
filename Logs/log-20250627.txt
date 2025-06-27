@@ -1,0 +1,788 @@
+2025-06-27 19:09:45.710 +03:00 [INF]  Application has started successfully!
+2025-06-27 19:09:46.720 +03:00 [WRN] Overriding address(es) 'http://localhost:5069'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-06-27 19:09:46.768 +03:00 [INF] Now listening on: http://localhost:5000
+2025-06-27 19:09:46.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-27 19:09:46.780 +03:00 [INF] Hosting environment: Development
+2025-06-27 19:09:46.783 +03:00 [INF] Content root path: C:\Users\marga\Desktop\ολα τα project\blue_project\BudgetDB
+2025-06-27 19:10:53.737 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/scrape - application/json 38
+2025-06-27 19:10:53.911 +03:00 [INF] Executing endpoint 'ScrapeController.Scrape (BudgetDB)'
+2025-06-27 19:10:53.980 +03:00 [INF] Route matched with {action = "Scrape", controller = "Scrape"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Scrape(ScrapeRequest) on controller ScrapeController (BudgetDB).
+2025-06-27 19:10:55.911 +03:00 [INF] 🔎 Scraping category URL: https://www.sklavenitis.gr/freska-froyta-lachanika/froyta/
+2025-06-27 19:11:47.667 +03:00 [INF] ✅ Parsed: 'Μπανάνες BAJELLA Εισαγωγής' | froyta | 1.27€
+2025-06-27 19:11:47.669 +03:00 [INF] ✅ Parsed: 'Μπανάνες CHIQUITA Εισαγωγής' | froyta | 1.85€
+2025-06-27 19:11:47.676 +03:00 [INF] ✅ Parsed: 'Μπανάνες DOLE Εισαγωγής' | froyta | 1.85€
+2025-06-27 19:11:47.678 +03:00 [INF] ✅ Parsed: 'Πορτοκάλια Βαλέντσια Χυμού συσκευασμένα Εγχώρια' | froyta | 0.95€
+2025-06-27 19:11:47.681 +03:00 [INF] ✅ Parsed: 'Πορτοκάλια Βαλέντσια Εγχώρια' | froyta | 1.05€
+2025-06-27 19:11:47.683 +03:00 [INF] ✅ Parsed: 'Μπανάνες DOLE Βιολογικές Εισαγωγής' | froyta | 1.95€
+2025-06-27 19:11:47.687 +03:00 [INF] ✅ Parsed: 'Μπανάνες CHIQUITA Βιολογικές Εισαγωγής' | froyta | 1.95€
+2025-06-27 19:11:47.691 +03:00 [INF] ✅ Parsed: 'Μήλα Στάρκιν Εγχώρια' | froyta | 1.53€
+2025-06-27 19:11:47.695 +03:00 [INF] ✅ Parsed: 'Αχλάδια Κρυστάλλια Εγχώρια' | froyta | 1.62€
+2025-06-27 19:11:47.696 +03:00 [INF] ✅ Parsed: 'Μήλα Γκραν Σμιθ Εγχώρια' | froyta | 1.82€
+2025-06-27 19:11:47.699 +03:00 [INF] ✅ Parsed: 'Αβοκάντο Ώριμα Εισαγωγής 2τεμ 400g' | froyta | 3.28€
+2025-06-27 19:11:47.702 +03:00 [INF] ✅ Parsed: 'Πορτοκάλια Βαλέντσια Βιολογικά Εγχώρια' | froyta | 1.68€
+2025-06-27 19:11:47.707 +03:00 [INF] ✅ Parsed: 'Ανανάς Εισαγωγής' | froyta | 1.70€
+2025-06-27 19:11:47.714 +03:00 [INF] ✅ Parsed: 'Μήλα Στάρκιν Εγχώρια συσκευασμένα' | froyta | 1.38€
+2025-06-27 19:11:47.716 +03:00 [INF] ✅ Parsed: 'Μάνγκο Εισαγωγής' | froyta | 3.38€
+2025-06-27 19:11:47.720 +03:00 [INF] ✅ Parsed: 'Καρπούζι Εγχώριο' | froyta | 0.57€
+2025-06-27 19:11:47.723 +03:00 [INF] ✅ Parsed: 'Χουρμάδες Φυσικοί Βασιλικοί Εισαγωγής 250g' | froyta | 3.40€
+2025-06-27 19:11:47.726 +03:00 [INF] ✅ Parsed: 'Πεπόνι Εγχώριο' | froyta | 1.28€
+2025-06-27 19:11:47.729 +03:00 [INF] ✅ Parsed: 'Μύρτιλα Εγχώρια 125g' | froyta | 2.20€
+2025-06-27 19:11:47.730 +03:00 [INF] ✅ Parsed: 'Ράσμπερις (Σμέουρα) Εγχώρια 125g' | froyta | 2.65€
+2025-06-27 19:11:47.733 +03:00 [INF] ✅ Parsed: 'Βατόμουρα Μαύρα Εισαγωγής 125g' | froyta | 2.48€
+2025-06-27 19:11:47.736 +03:00 [INF] ✅ Parsed: 'Αβοκάντο Εισαγωγής' | froyta | 3.90€
+2025-06-27 19:11:47.741 +03:00 [INF] ✅ Parsed: 'Μήλα Γκόλντεν Εισαγωγής' | froyta | 2.08€
+2025-06-27 19:11:47.749 +03:00 [INF] ✅ Parsed: 'Αβοκάντο Βιολογικά Εγχώρια' | froyta | 6.58€
+2025-06-27 19:11:47.752 +03:00 [INF] ✅ Parsed: 'Ακτινίδια Βιολογικά Εγχώρια' | froyta | 5.00€
+2025-06-27 19:11:47.758 +03:00 [INF] ✅ Parsed: 'Λάιμ Εισαγωγής' | froyta | 2.94€
+2025-06-27 19:11:47.761 +03:00 [INF] ✅ Parsed: 'Βερίκοκα Κόκκινα Εγχώρια' | froyta | 3.73€
+2025-06-27 19:11:47.765 +03:00 [INF] ✅ Parsed: 'Ανανάς ΦΡΕΣΚΟΥΛΗΣ 220g' | froyta | 2.25€
+2025-06-27 19:11:47.768 +03:00 [INF] ✅ Parsed: 'Σταφύλια Φράουλα Εισαγωγής' | froyta | 4.55€
+2025-06-27 19:11:47.771 +03:00 [INF] ✅ Parsed: 'Ροδάκινo Ημαθίας ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε φέτες σε Χυμό Φρούτων 400g' | froyta | 3.85€
+2025-06-27 19:11:47.778 +03:00 [INF] ✅ Parsed: 'Ρόδια Εισαγωγής' | froyta | 5.45€
+2025-06-27 19:11:47.782 +03:00 [INF] ✅ Parsed: 'Τροπικά Φρούτα ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε Χυμό Φρούτων 400g' | froyta | 3.85€
+2025-06-27 19:11:47.785 +03:00 [INF] ✅ Parsed: 'Ακτινίδια Κιτρινόσαρκα ZESPRI Εισαγωγής' | froyta | 6.98€
+2025-06-27 19:11:47.789 +03:00 [INF] ✅ Parsed: 'Μήλα Γκόλντεν Βιολογικά Εισαγωγής' | froyta | 4.46€
+2025-06-27 19:11:47.792 +03:00 [INF] ✅ Parsed: 'Κάστανα Βρασμένα Εισαγωγής 400g' | froyta | 6.50€
+2025-06-27 19:11:47.795 +03:00 [INF] ✅ Parsed: 'Κάστανα Βρασμένα Βιολογικά Εισαγωγής 200g' | froyta | 4.20€
+2025-06-27 19:11:47.798 +03:00 [INF] ✅ Parsed: 'Αχλάδια Φέτελ Εισαγωγής' | froyta | 2.95€
+2025-06-27 19:11:47.800 +03:00 [INF] ✅ Parsed: 'Καρύδα Εισαγωγής' | froyta | 1.98€
+2025-06-27 19:11:47.802 +03:00 [INF] ✅ Parsed: 'Μήλα Στάρκιν Βιολογικά Εισαγωγής' | froyta | 4.55€
+2025-06-27 19:11:47.808 +03:00 [INF] ✅ Parsed: 'Λεμόνια Βιολογικά Εισαγωγής' | froyta | 3.60€
+2025-06-27 19:11:47.822 +03:00 [INF] ✅ Parsed: 'Ακτινίδια ZESPRI Εισαγωγής' | froyta | 4.92€
+2025-06-27 19:11:47.828 +03:00 [INF] ✅ Parsed: 'Νεκταρίνια Εγχώρια' | froyta | 2.95€
+2025-06-27 19:11:47.831 +03:00 [INF] ✅ Parsed: 'Καρπούζι Baby Βιολογικό Εγχώριο' | froyta | 2.40€
+2025-06-27 19:11:47.835 +03:00 [INF] ✅ Parsed: 'Ροδάκινα Εγχώρια' | froyta | 3.35€
+2025-06-27 19:11:47.839 +03:00 [INF] ✅ Parsed: 'Καρπούζι μίνι Εγχώριο' | froyta | 0.90€
+2025-06-27 19:11:47.860 +03:00 [INF] ✅ Parsed: 'Μήλα Γκραν Σμιθ Βιολογικά Εισαγωγής' | froyta | 4.28€
+2025-06-27 19:11:47.869 +03:00 [INF] ✅ Parsed: 'Κεράσια Εγχώρια' | froyta | 6.95€
+2025-06-27 19:11:47.872 +03:00 [INF] ✅ Parsed: 'Γκρέιπφρουτ Κόκκινα Εισαγωγής' | froyta | 1.65€
+2025-06-27 19:11:47.876 +03:00 [INF] ✅ Parsed: 'Πεπόνι Βιολογικό Εγχώριο' | froyta | 4.15€
+2025-06-27 19:11:47.884 +03:00 [INF] ✅ Parsed: 'Λεμόνια Εισαγωγής' | froyta | 2.38€
+2025-06-27 19:11:47.887 +03:00 [INF] ✅ Parsed: 'Ροδάκινα Βιολογικά Εγχώρια' | froyta | 6.00€
+2025-06-27 19:11:47.889 +03:00 [INF] ✅ Parsed: 'Βερίκοκα Μπεμπέκου Εγχώρια' | froyta | 2.40€
+2025-06-27 19:11:47.891 +03:00 [INF] ✅ Parsed: 'Νεκταρίνια Βιολογικά Εγχώρια' | froyta | 5.98€
+2025-06-27 19:11:47.894 +03:00 [INF] ✅ Parsed: 'Βανίλιες Εγχώριες' | froyta | 4.40€
+2025-06-27 19:11:47.896 +03:00 [INF] ✅ Parsed: 'Ροδάκινα Λευκόσαρκα Πλατύκαρπα Εγχώρια' | froyta | 3.85€
+2025-06-27 19:11:47.898 +03:00 [INF] ✅ Parsed: 'Βερίκοκα Κόκκινα Βιολογικά Εγχώρια' | froyta | 5.65€
+2025-06-27 19:11:47.901 +03:00 [INF] ✅ Parsed: 'Ροδάκινα Λευκόσαρκα Εγχώρια' | froyta | 3.55€
+2025-06-27 19:11:47.904 +03:00 [INF] ✅ Parsed: 'Νεκταρίνια Λευκόσαρκα Εγχώρια' | froyta | 2.54€
+2025-06-27 19:11:47.906 +03:00 [INF] ✅ Parsed: 'Νεκταρίνια συσκευασμένα Εγχώρια' | froyta | 2.00€
+2025-06-27 19:11:47.911 +03:00 [INF] ✅ Parsed: 'Δαμάσκηνα Βιολογικά Εγχώρια' | froyta | 6.40€
+2025-06-27 19:11:47.918 +03:00 [INF] ✅ Parsed: 'Μύρτιλα Εγχώρια Βιολογικά 125g' | froyta | 3.62€
+2025-06-27 19:11:47.922 +03:00 [INF] ✅ Parsed: 'Πεπόνι τύπου Άργους Εγχώριο' | froyta | 2.65€
+2025-06-27 19:11:47.924 +03:00 [INF] ✅ Parsed: 'Βερίκοκα Διαμαντοπούλου Εγχώρια' | froyta | 6.67€
+2025-06-27 19:11:47.926 +03:00 [INF] ✅ Scraping complete. Total products scraped: 63
+2025-06-27 19:11:47.929 +03:00 [INF] froyta - Μπανάνες BAJELLA Εισαγωγής: 1.27€
+2025-06-27 19:11:47.930 +03:00 [INF] froyta - Μπανάνες CHIQUITA Εισαγωγής: 1.85€
+2025-06-27 19:11:47.932 +03:00 [INF] froyta - Μπανάνες DOLE Εισαγωγής: 1.85€
+2025-06-27 19:11:47.934 +03:00 [INF] froyta - Πορτοκάλια Βαλέντσια Χυμού συσκευασμένα Εγχώρια: 0.95€
+2025-06-27 19:11:47.936 +03:00 [INF] froyta - Πορτοκάλια Βαλέντσια Εγχώρια: 1.05€
+2025-06-27 19:11:47.938 +03:00 [INF] froyta - Μπανάνες DOLE Βιολογικές Εισαγωγής: 1.95€
+2025-06-27 19:11:47.939 +03:00 [INF] froyta - Μπανάνες CHIQUITA Βιολογικές Εισαγωγής: 1.95€
+2025-06-27 19:11:47.941 +03:00 [INF] froyta - Μήλα Στάρκιν Εγχώρια: 1.53€
+2025-06-27 19:11:47.942 +03:00 [INF] froyta - Αχλάδια Κρυστάλλια Εγχώρια: 1.62€
+2025-06-27 19:11:47.944 +03:00 [INF] froyta - Μήλα Γκραν Σμιθ Εγχώρια: 1.82€
+2025-06-27 19:11:47.946 +03:00 [INF] froyta - Αβοκάντο Ώριμα Εισαγωγής 2τεμ 400g: 3.28€
+2025-06-27 19:11:47.948 +03:00 [INF] froyta - Πορτοκάλια Βαλέντσια Βιολογικά Εγχώρια: 1.68€
+2025-06-27 19:11:47.950 +03:00 [INF] froyta - Ανανάς Εισαγωγής: 1.70€
+2025-06-27 19:11:47.951 +03:00 [INF] froyta - Μήλα Στάρκιν Εγχώρια συσκευασμένα: 1.38€
+2025-06-27 19:11:47.953 +03:00 [INF] froyta - Μάνγκο Εισαγωγής: 3.38€
+2025-06-27 19:11:47.955 +03:00 [INF] froyta - Καρπούζι Εγχώριο: 0.57€
+2025-06-27 19:11:47.957 +03:00 [INF] froyta - Χουρμάδες Φυσικοί Βασιλικοί Εισαγωγής 250g: 3.40€
+2025-06-27 19:11:47.959 +03:00 [INF] froyta - Πεπόνι Εγχώριο: 1.28€
+2025-06-27 19:11:47.960 +03:00 [INF] froyta - Μύρτιλα Εγχώρια 125g: 2.20€
+2025-06-27 19:11:47.963 +03:00 [INF] froyta - Ράσμπερις (Σμέουρα) Εγχώρια 125g: 2.65€
+2025-06-27 19:11:47.964 +03:00 [INF] froyta - Βατόμουρα Μαύρα Εισαγωγής 125g: 2.48€
+2025-06-27 19:11:47.966 +03:00 [INF] froyta - Αβοκάντο Εισαγωγής: 3.90€
+2025-06-27 19:11:47.967 +03:00 [INF] froyta - Μήλα Γκόλντεν Εισαγωγής: 2.08€
+2025-06-27 19:11:47.968 +03:00 [INF] froyta - Αβοκάντο Βιολογικά Εγχώρια: 6.58€
+2025-06-27 19:11:47.970 +03:00 [INF] froyta - Ακτινίδια Βιολογικά Εγχώρια: 5.00€
+2025-06-27 19:11:47.972 +03:00 [INF] froyta - Λάιμ Εισαγωγής: 2.94€
+2025-06-27 19:11:47.973 +03:00 [INF] froyta - Βερίκοκα Κόκκινα Εγχώρια: 3.73€
+2025-06-27 19:11:47.975 +03:00 [INF] froyta - Ανανάς ΦΡΕΣΚΟΥΛΗΣ 220g: 2.25€
+2025-06-27 19:11:47.976 +03:00 [INF] froyta - Σταφύλια Φράουλα Εισαγωγής: 4.55€
+2025-06-27 19:11:47.978 +03:00 [INF] froyta - Ροδάκινo Ημαθίας ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε φέτες σε Χυμό Φρούτων 400g: 3.85€
+2025-06-27 19:11:47.980 +03:00 [INF] froyta - Ρόδια Εισαγωγής: 5.45€
+2025-06-27 19:11:47.981 +03:00 [INF] froyta - Τροπικά Φρούτα ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε Χυμό Φρούτων 400g: 3.85€
+2025-06-27 19:11:47.983 +03:00 [INF] froyta - Ακτινίδια Κιτρινόσαρκα ZESPRI Εισαγωγής: 6.98€
+2025-06-27 19:11:47.985 +03:00 [INF] froyta - Μήλα Γκόλντεν Βιολογικά Εισαγωγής: 4.46€
+2025-06-27 19:11:47.986 +03:00 [INF] froyta - Κάστανα Βρασμένα Εισαγωγής 400g: 6.50€
+2025-06-27 19:11:47.989 +03:00 [INF] froyta - Κάστανα Βρασμένα Βιολογικά Εισαγωγής 200g: 4.20€
+2025-06-27 19:11:47.991 +03:00 [INF] froyta - Αχλάδια Φέτελ Εισαγωγής: 2.95€
+2025-06-27 19:11:47.993 +03:00 [INF] froyta - Καρύδα Εισαγωγής: 1.98€
+2025-06-27 19:11:47.995 +03:00 [INF] froyta - Μήλα Στάρκιν Βιολογικά Εισαγωγής: 4.55€
+2025-06-27 19:11:47.996 +03:00 [INF] froyta - Λεμόνια Βιολογικά Εισαγωγής: 3.60€
+2025-06-27 19:11:47.999 +03:00 [INF] froyta - Ακτινίδια ZESPRI Εισαγωγής: 4.92€
+2025-06-27 19:11:48.000 +03:00 [INF] froyta - Νεκταρίνια Εγχώρια: 2.95€
+2025-06-27 19:11:48.001 +03:00 [INF] froyta - Καρπούζι Baby Βιολογικό Εγχώριο: 2.40€
+2025-06-27 19:11:48.003 +03:00 [INF] froyta - Ροδάκινα Εγχώρια: 3.35€
+2025-06-27 19:11:48.005 +03:00 [INF] froyta - Καρπούζι μίνι Εγχώριο: 0.90€
+2025-06-27 19:11:48.007 +03:00 [INF] froyta - Μήλα Γκραν Σμιθ Βιολογικά Εισαγωγής: 4.28€
+2025-06-27 19:11:48.008 +03:00 [INF] froyta - Κεράσια Εγχώρια: 6.95€
+2025-06-27 19:11:48.009 +03:00 [INF] froyta - Γκρέιπφρουτ Κόκκινα Εισαγωγής: 1.65€
+2025-06-27 19:11:48.011 +03:00 [INF] froyta - Πεπόνι Βιολογικό Εγχώριο: 4.15€
+2025-06-27 19:11:48.014 +03:00 [INF] froyta - Λεμόνια Εισαγωγής: 2.38€
+2025-06-27 19:11:48.026 +03:00 [INF] froyta - Ροδάκινα Βιολογικά Εγχώρια: 6.00€
+2025-06-27 19:11:48.028 +03:00 [INF] froyta - Βερίκοκα Μπεμπέκου Εγχώρια: 2.40€
+2025-06-27 19:11:48.030 +03:00 [INF] froyta - Νεκταρίνια Βιολογικά Εγχώρια: 5.98€
+2025-06-27 19:11:48.031 +03:00 [INF] froyta - Βανίλιες Εγχώριες: 4.40€
+2025-06-27 19:11:48.033 +03:00 [INF] froyta - Ροδάκινα Λευκόσαρκα Πλατύκαρπα Εγχώρια: 3.85€
+2025-06-27 19:11:48.034 +03:00 [INF] froyta - Βερίκοκα Κόκκινα Βιολογικά Εγχώρια: 5.65€
+2025-06-27 19:11:48.035 +03:00 [INF] froyta - Ροδάκινα Λευκόσαρκα Εγχώρια: 3.55€
+2025-06-27 19:11:48.036 +03:00 [INF] froyta - Νεκταρίνια Λευκόσαρκα Εγχώρια: 2.54€
+2025-06-27 19:11:48.038 +03:00 [INF] froyta - Νεκταρίνια συσκευασμένα Εγχώρια: 2.00€
+2025-06-27 19:11:48.039 +03:00 [INF] froyta - Δαμάσκηνα Βιολογικά Εγχώρια: 6.40€
+2025-06-27 19:11:48.041 +03:00 [INF] froyta - Μύρτιλα Εγχώρια Βιολογικά 125g: 3.62€
+2025-06-27 19:11:48.042 +03:00 [INF] froyta - Πεπόνι τύπου Άργους Εγχώριο: 2.65€
+2025-06-27 19:11:48.043 +03:00 [INF] froyta - Βερίκοκα Διαμαντοπούλου Εγχώρια: 6.67€
+2025-06-27 19:11:49.575 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`Name`
+FROM `Supermarkets` AS `s`
+WHERE LOWER(`s`.`Name`) = @__ToLower_0
+LIMIT 1
+2025-06-27 19:11:49.709 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`ProductId`
+FROM `SupermarketProducts` AS `s`
+WHERE `s`.`SupermarketId` = @__supermarketId_0
+2025-06-27 19:11:49.758 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:49.813 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:49.830 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:49.844 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.001 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.016 +03:00 [INF] 🔄 Updated price/discount for 'Πορτοκάλια Βαλέντσια Χυμού συσκευασμένα Εγχώρια' (supermarket 'sklavenitis'): 0.9000000000000000000000000000€ → 0.95€
+2025-06-27 19:11:50.026 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.046 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.049 +03:00 [INF] 🔄 Updated price/discount for 'Πορτοκάλια Βαλέντσια Εγχώρια' (supermarket 'sklavenitis'): 0.9800000000000000000000000000€ → 1.05€
+2025-06-27 19:11:50.060 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.079 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.095 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.113 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.118 +03:00 [INF] 🔄 Updated price/discount for 'Μήλα Στάρκιν Εγχώρια' (supermarket 'sklavenitis'): 1.5000000000000000000000000000€ → 1.53€
+2025-06-27 19:11:50.130 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.147 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.161 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.166 +03:00 [INF] 🔄 Updated price/discount for 'Μήλα Γκραν Σμιθ Εγχώρια' (supermarket 'sklavenitis'): 1.7700000000000000000000000000€ → 1.82€
+2025-06-27 19:11:50.186 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.210 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.225 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.229 +03:00 [INF] 🔄 Updated price/discount for 'Πορτοκάλια Βαλέντσια Βιολογικά Εγχώρια' (supermarket 'sklavenitis'): 1.7000000000000000000000000000€ → 1.68€
+2025-06-27 19:11:50.235 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.321 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:50.388 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:50.461 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:50.465 +03:00 [INF] ➕ Created duplicate of 'Ανανάς Εισαγωγής' for supermarket 'sklavenitis'
+2025-06-27 19:11:50.476 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.498 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.501 +03:00 [INF] 🔄 Updated price/discount for 'Μήλα Στάρκιν Εγχώρια συσκευασμένα' (supermarket 'sklavenitis'): 1.4000000000000000000000000000€ → 1.38€
+2025-06-27 19:11:50.511 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.529 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.533 +03:00 [INF] 🔄 Updated price/discount for 'Μάνγκο Εισαγωγής' (supermarket 'sklavenitis'): 3.2200000000000000000000000000€ → 3.38€
+2025-06-27 19:11:50.545 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.572 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.580 +03:00 [INF] 🔄 Updated price/discount for 'Καρπούζι Εγχώριο' (supermarket 'sklavenitis'): 0.5000000000000000000000000000€ → 0.57€
+2025-06-27 19:11:50.598 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.631 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.655 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.659 +03:00 [INF] 🔄 Updated price/discount for 'Πεπόνι Εγχώριο' (supermarket 'sklavenitis'): 1.4800000000000000000000000000€ → 1.28€
+2025-06-27 19:11:50.689 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.706 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.720 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.723 +03:00 [INF] 🔄 Updated price/discount for 'Ράσμπερις (Σμέουρα) Εγχώρια 125g' (supermarket 'sklavenitis'): 2.3500000000000000000000000000€ → 2.65€
+2025-06-27 19:11:50.746 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.766 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.775 +03:00 [INF] 🔄 Updated price/discount for 'Βατόμουρα Μαύρα Εισαγωγής 125g' (supermarket 'sklavenitis'): 2.4500000000000000000000000000€ → 2.48€
+2025-06-27 19:11:50.789 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.810 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.825 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.829 +03:00 [INF] 🔄 Updated price/discount for 'Μήλα Γκόλντεν Εισαγωγής' (supermarket 'sklavenitis'): 2.0300000000000000000000000000€ → 2.08€
+2025-06-27 19:11:50.847 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.863 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.880 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.896 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.900 +03:00 [INF] 🔄 Updated price/discount for 'Λάιμ Εισαγωγής' (supermarket 'sklavenitis'): 2.9300000000000000000000000000€ → 2.94€
+2025-06-27 19:11:50.915 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.931 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.934 +03:00 [INF] 🔄 Updated price/discount for 'Βερίκοκα Κόκκινα Εγχώρια' (supermarket 'sklavenitis'): 3.8000000000000000000000000000€ → 3.73€
+2025-06-27 19:11:50.950 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.966 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:50.990 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:50.993 +03:00 [INF] 🔄 Updated price/discount for 'Σταφύλια Φράουλα Εισαγωγής' (supermarket 'sklavenitis'): 4.6800000000000000000000000000€ → 4.55€
+2025-06-27 19:11:51.007 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.031 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.035 +03:00 [INF] 🔄 Updated price/discount for 'Ροδάκινo Ημαθίας ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε φέτες σε Χυμό Φρούτων 400g' (supermarket 'sklavenitis'): 3.2000000000000000000000000000€ → 3.85€
+2025-06-27 19:11:51.054 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.069 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.090 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.094 +03:00 [INF] 🔄 Updated price/discount for 'Τροπικά Φρούτα ΑΓΡΟΚΗΠΟΣ ΧΑΛΒΑΤΖΗ σε Χυμό Φρούτων 400g' (supermarket 'sklavenitis'): 3.2000000000000000000000000000€ → 3.85€
+2025-06-27 19:11:51.106 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.131 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.140 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:51.160 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:51.175 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:51.193 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.207 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.225 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.240 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.245 +03:00 [INF] 🔄 Updated price/discount for 'Αχλάδια Φέτελ Εισαγωγής' (supermarket 'sklavenitis'): 2.9800000000000000000000000000€ → 2.95€
+2025-06-27 19:11:51.262 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.286 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.294 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:51.311 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:51.329 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:51.343 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.365 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.368 +03:00 [INF] 🔄 Updated price/discount for 'Λεμόνια Βιολογικά Εισαγωγής' (supermarket 'sklavenitis'): 3.3800000000000000000000000000€ → 3.60€
+2025-06-27 19:11:51.382 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.404 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.408 +03:00 [INF] 🔄 Updated price/discount for 'Ακτινίδια ZESPRI Εισαγωγής' (supermarket 'sklavenitis'): 5.7200000000000000000000000000€ → 4.92€
+2025-06-27 19:11:51.423 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.438 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.443 +03:00 [INF] 🔄 Updated price/discount for 'Νεκταρίνια Εγχώρια' (supermarket 'sklavenitis'): 3.3000000000000000000000000000€ → 2.95€
+2025-06-27 19:11:51.459 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.476 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.482 +03:00 [INF] 🔄 Updated price/discount for 'Καρπούζι Baby Βιολογικό Εγχώριο' (supermarket 'sklavenitis'): 2.9800000000000000000000000000€ → 2.40€
+2025-06-27 19:11:51.497 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.513 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.517 +03:00 [INF] 🔄 Updated price/discount for 'Ροδάκινα Εγχώρια' (supermarket 'sklavenitis'): 2.5300000000000000000000000000€ → 3.35€
+2025-06-27 19:11:51.532 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.548 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.552 +03:00 [INF] 🔄 Updated price/discount for 'Καρπούζι μίνι Εγχώριο' (supermarket 'sklavenitis'): 1.0500000000000000000000000000€ → 0.90€
+2025-06-27 19:11:51.568 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.584 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.602 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.606 +03:00 [INF] 🔄 Updated price/discount for 'Κεράσια Εγχώρια' (supermarket 'sklavenitis'): 7.7000000000000000000000000000€ → 6.95€
+2025-06-27 19:11:51.619 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.639 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.659 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.670 +03:00 [INF] 🔄 Updated price/discount for 'Πεπόνι Βιολογικό Εγχώριο' (supermarket 'sklavenitis'): 4.2500000000000000000000000000€ → 4.15€
+2025-06-27 19:11:51.686 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.710 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.715 +03:00 [INF] 🔄 Updated price/discount for 'Λεμόνια Εισαγωγής' (supermarket 'sklavenitis'): 2.0800000000000000000000000000€ → 2.38€
+2025-06-27 19:11:51.727 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.749 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.753 +03:00 [INF] 🔄 Updated price/discount for 'Ροδάκινα Βιολογικά Εγχώρια' (supermarket 'sklavenitis'): 5.9800000000000000000000000000€ → 6.00€
+2025-06-27 19:11:51.769 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.785 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.790 +03:00 [INF] 🔄 Updated price/discount for 'Βερίκοκα Μπεμπέκου Εγχώρια' (supermarket 'sklavenitis'): 2.6000000000000000000000000000€ → 2.40€
+2025-06-27 19:11:51.805 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.821 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.825 +03:00 [INF] 🔄 Updated price/discount for 'Νεκταρίνια Βιολογικά Εγχώρια' (supermarket 'sklavenitis'): 6.0000000000000000000000000000€ → 5.98€
+2025-06-27 19:11:51.841 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.857 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.861 +03:00 [INF] 🔄 Updated price/discount for 'Βανίλιες Εγχώριες' (supermarket 'sklavenitis'): 4.9800000000000000000000000000€ → 4.40€
+2025-06-27 19:11:51.876 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.892 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.896 +03:00 [INF] 🔄 Updated price/discount for 'Ροδάκινα Λευκόσαρκα Πλατύκαρπα Εγχώρια' (supermarket 'sklavenitis'): 3.6800000000000000000000000000€ → 3.85€
+2025-06-27 19:11:51.916 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.931 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:51.941 +03:00 [INF] 🔄 Updated price/discount for 'Βερίκοκα Κόκκινα Βιολογικά Εγχώρια' (supermarket 'sklavenitis'): 5.8000000000000000000000000000€ → 5.65€
+2025-06-27 19:11:51.964 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:51.978 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:51.993 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:52.011 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:52.033 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.047 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:52.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:52.078 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:52.098 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.114 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:52.129 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:52.155 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:52.179 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.195 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:52.221 +03:00 [INF] 🔄 Updated price/discount for 'Δαμάσκηνα Βιολογικά Εγχώρια' (supermarket 'sklavenitis'): 6.3200000000000000000000000000€ → 6.40€
+2025-06-27 19:11:52.253 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.269 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:52.273 +03:00 [INF] 🔄 Updated price/discount for 'Μύρτιλα Εγχώρια Βιολογικά 125g' (supermarket 'sklavenitis'): 3.5500000000000000000000000000€ → 3.62€
+2025-06-27 19:11:52.300 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.313 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Products` (`Category`, `Discount`, `Kcal`, `Name`, `Price`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `Products`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-06-27 19:11:52.327 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__supermarketId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `SupermarketProducts` AS `s`
+    WHERE (`s`.`SupermarketId` = @__supermarketId_0) AND (`s`.`ProductId` = @__productId_1))
+2025-06-27 19:11:52.341 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `SupermarketProducts` (`ProductId`, `SupermarketId`)
+VALUES (@p0, @p1);
+2025-06-27 19:11:52.361 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalized_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`Category`, `p`.`Discount`, `p`.`Kcal`, `p`.`Name`, `p`.`Price`
+FROM `Products` AS `p`
+WHERE LOWER(`p`.`Name`) = @__normalized_0
+LIMIT 1
+2025-06-27 19:11:52.376 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Products` SET `Category` = @p0, `Discount` = @p1, `Kcal` = @p2, `Name` = @p3, `Price` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-06-27 19:11:52.384 +03:00 [INF] 🔄 Updated price/discount for 'Βερίκοκα Διαμαντοπούλου Εγχώρια' (supermarket 'sklavenitis'): 6.8000000000000000000000000000€ → 6.67€
+2025-06-27 19:11:52.386 +03:00 [INF] ✅ Summary: Added=7, Updated=36, Linked=7, Skipped=0
+2025-06-27 19:11:52.396 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Product, BudgetDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-27 19:11:52.432 +03:00 [INF] Executed action ScrapeController.Scrape (BudgetDB) in 58442.8678ms
+2025-06-27 19:11:52.438 +03:00 [INF] Executed endpoint 'ScrapeController.Scrape (BudgetDB)'
+2025-06-27 19:11:52.456 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/scrape - 200 null application/json; charset=utf-8 58722.3228ms
